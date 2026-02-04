@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     "software development Kenya",
     "digital transformation Africa",
   ],
+  metadataBase: new URL("https://naniya.co.ke"),
   openGraph: {
     title: "Naniya Technologies Limited",
     description: "Innovative technology solutions for African businesses",
@@ -20,7 +21,30 @@ export const metadata: Metadata = {
     siteName: "Naniya Technologies",
     locale: "en_KE",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Naniya Technologies — Technology Solutions for Africa",
+      },
+    ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Naniya Technologies Limited",
+    description: "Innovative technology solutions for African businesses",
+    images: ["/og-image.png"],
+  },
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
@@ -30,6 +54,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="theme-color" content="#2563eb" />
+      </head>
       <body className="antialiased">{children}</body>
     </html>
   );
