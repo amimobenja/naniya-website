@@ -45,6 +45,9 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
   manifest: "/site.webmanifest",
+  other: {
+    "theme-color": "#2563eb",
+  },
 };
 
 export default function RootLayout({
@@ -54,9 +57,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <meta name="theme-color" content="#2563eb" />
-      </head>
       <body className="antialiased">{children}</body>
     </html>
   );
