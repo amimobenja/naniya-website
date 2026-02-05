@@ -11,6 +11,7 @@ export default function Home() {
             <span className="text-xl font-bold text-gray-900">Naniya</span>
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm text-gray-600">
+            <a href="https://chama.naniya.co.ke" target="_blank" rel="noopener noreferrer" className="hover:text-primary-600 transition">Chama Platform</a>
             <a href="#products" className="hover:text-primary-600 transition">Products</a>
             <a href="#services" className="hover:text-primary-600 transition">Services</a>
             <a href="#about" className="hover:text-primary-600 transition">About</a>
@@ -33,7 +34,7 @@ export default function Home() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-accent-50 text-accent-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
               <span className="w-2 h-2 bg-accent-500 rounded-full animate-pulse" />
-              Chama Platform is LIVE on WhatsApp
+              Chama Platform is LIVE
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
               Manage Your Chama{" "}
@@ -47,18 +48,20 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap gap-4">
               <a
-                href="https://wa.me/254701557978"
+                href="https://chama.naniya.co.ke/signup"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-accent-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-accent-700 transition inline-flex items-center gap-2"
               >
-                💬 Get Started on WhatsApp
+                🚀 Try Chama Platform
               </a>
               <a
-                href="#products"
-                className="border border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-medium hover:border-primary-300 hover:text-primary-600 transition"
+                href="https://wa.me/254701557978"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-medium hover:border-accent-300 hover:text-accent-600 transition inline-flex items-center gap-2"
               >
-                View Products
+                💬 WhatsApp Us
               </a>
             </div>
           </div>
@@ -131,14 +134,24 @@ export default function Home() {
                     </span>
                   ))}
                 </div>
-                <a
-                  href="https://wa.me/254701557978"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-accent-600 text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-accent-700 transition"
-                >
-                  💬 Message Us on WhatsApp to Get Started
-                </a>
+                <div className="flex flex-col gap-2">
+                  <a
+                    href="https://chama.naniya.co.ke"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-accent-600 text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-accent-700 transition"
+                  >
+                    Try Chama Platform →
+                  </a>
+                  <a
+                    href="https://wa.me/254701557978"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-gray-500 hover:text-accent-600 transition"
+                  >
+                    or message us on WhatsApp
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -372,7 +385,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-5 gap-8">
             <div className="md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
@@ -385,6 +398,17 @@ export default function Home() {
                 building products that help communities and businesses manage
                 their finances through technology.
               </p>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Products</h4>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li>
+                  <a href="https://chama.naniya.co.ke" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Chama Platform</a>
+                </li>
+                <li>
+                  <span className="text-gray-500">LipaClear — Coming Soon</span>
+                </li>
+              </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
