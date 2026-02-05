@@ -11,16 +11,18 @@ export default function Home() {
             <span className="text-xl font-bold text-gray-900">Naniya</span>
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm text-gray-600">
+            <a href="#products" className="hover:text-primary-600 transition">Products</a>
             <a href="#services" className="hover:text-primary-600 transition">Services</a>
             <a href="#about" className="hover:text-primary-600 transition">About</a>
-            <a href="#products" className="hover:text-primary-600 transition">Products</a>
             <a href="#contact" className="hover:text-primary-600 transition">Contact</a>
           </div>
           <a
-            href="#contact"
-            className="bg-primary-600 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-primary-700 transition"
+            href="https://wa.me/254701557978"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-accent-600 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-accent-700 transition"
           >
-            Get in Touch
+            💬 WhatsApp Us
           </a>
         </div>
       </nav>
@@ -29,25 +31,28 @@ export default function Home() {
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-primary-50 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-              <span className="w-2 h-2 bg-primary-500 rounded-full animate-pulse" />
-              Building the future of African tech
+            <div className="inline-flex items-center gap-2 bg-accent-50 text-accent-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <span className="w-2 h-2 bg-accent-500 rounded-full animate-pulse" />
+              Chama Platform is LIVE on WhatsApp
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              Technology Solutions{" "}
-              <span className="text-primary-600">That Move Africa Forward</span>
+              Manage Your Chama{" "}
+              <span className="text-primary-600">Right From WhatsApp</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl">
-              Naniya Technologies builds innovative digital products and provides
-              technology services that help businesses across Africa automate,
-              scale, and thrive in the digital economy.
+              Naniya Technologies builds products that solve real problems for
+              Kenyan communities. Our flagship product, Chama Platform, lets
+              savings groups track contributions, manage loans, and process
+              M-PESA payments — all through WhatsApp. No app download needed.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
-                href="#services"
-                className="bg-primary-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-primary-700 transition"
+                href="https://wa.me/254701557978"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-accent-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-accent-700 transition inline-flex items-center gap-2"
               >
-                Our Services
+                💬 Get Started on WhatsApp
               </a>
               <a
                 href="#products"
@@ -64,10 +69,10 @@ export default function Home() {
       <section className="py-12 bg-gray-50 border-y border-gray-100">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { stat: "2026", label: "Founded" },
-            { stat: "Kenya", label: "Headquarters" },
-            { stat: "WhatsApp", label: "API Expertise" },
-            { stat: "M-PESA", label: "Payments Integration" },
+            { stat: "2", label: "Products Built" },
+            { stat: "WhatsApp API", label: "Business Integration" },
+            { stat: "M-PESA", label: "Payments Built-in" },
+            { stat: "Kenya-first", label: "Made for Local Needs" },
           ].map((item) => (
             <div key={item.label} className="text-center">
               <div className="text-2xl font-bold text-gray-900">{item.stat}</div>
@@ -77,8 +82,111 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Products */}
+      <section id="products" className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Our Products
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Purpose-built digital products solving real problems for Kenyan
+              communities and businesses.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Chama Platform — LIVE */}
+            <div className="rounded-2xl border border-gray-200 overflow-hidden hover:shadow-xl transition">
+              <div className="bg-gradient-to-r from-accent-500 to-accent-600 p-8 text-white relative">
+                <div className="absolute top-4 right-4 bg-white text-accent-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
+                  ✅ Live
+                </div>
+                <div className="text-4xl mb-3">🏦</div>
+                <h3 className="text-2xl font-bold">Chama Platform</h3>
+                <p className="text-white/80 mt-2">
+                  WhatsApp-first savings group management for Kenya
+                </p>
+              </div>
+              <div className="p-6">
+                <p className="text-gray-600 mb-4">
+                  The easiest way for Kenyan chamas to manage money. Track
+                  contributions, handle loans, process M-PESA payments, and view
+                  group dashboards — all through WhatsApp. No app to download,
+                  no complicated setup.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {[
+                    "WhatsApp Bot",
+                    "M-PESA Integration",
+                    "Contribution Tracking",
+                    "Loan Management",
+                    "Group Dashboards",
+                    "No App Download",
+                  ].map((tag) => (
+                    <span
+                      key={tag}
+                      className="bg-accent-50 text-accent-700 px-3 py-1 rounded-full text-xs font-medium"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <a
+                  href="https://wa.me/254701557978"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-accent-600 text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-accent-700 transition"
+                >
+                  💬 Message Us on WhatsApp to Get Started
+                </a>
+              </div>
+            </div>
+
+            {/* LipaClear — Coming Soon */}
+            <div className="rounded-2xl border border-gray-200 overflow-hidden hover:shadow-xl transition">
+              <div className="bg-gradient-to-r from-primary-500 to-primary-600 p-8 text-white relative">
+                <div className="absolute top-4 right-4 bg-white/90 text-primary-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
+                  🚀 Coming Soon
+                </div>
+                <div className="text-4xl mb-3">📊</div>
+                <h3 className="text-2xl font-bold">LipaClear</h3>
+                <p className="text-white/80 mt-2">
+                  M-PESA reconciliation for businesses
+                </p>
+              </div>
+              <div className="p-6">
+                <p className="text-gray-600 mb-4">
+                  Stop manually matching M-PESA statements with your records.
+                  LipaClear automatically reconciles M-PESA transaction
+                  statements with your internal business records — saving hours
+                  of tedious bookkeeping and reducing errors.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {[
+                    "M-PESA Statements",
+                    "Auto-Reconciliation",
+                    "Error Detection",
+                    "Business Reports",
+                  ].map((tag) => (
+                    <span
+                      key={tag}
+                      className="bg-primary-50 text-primary-700 px-3 py-1 rounded-full text-xs font-medium"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <span className="inline-flex items-center gap-2 text-primary-600 text-sm font-medium">
+                  Fully built — launching soon
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services */}
-      <section id="services" className="py-20 px-6">
+      <section id="services" className="py-20 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -124,7 +232,7 @@ export default function Home() {
             ].map((service) => (
               <div
                 key={service.title}
-                className="p-6 rounded-xl border border-gray-200 hover:border-primary-200 hover:shadow-lg transition group"
+                className="p-6 rounded-xl border border-gray-200 bg-white hover:border-primary-200 hover:shadow-lg transition group"
               >
                 <div className="text-3xl mb-4">{service.icon}</div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-primary-600 transition">
@@ -140,7 +248,7 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section id="about" className="py-20 px-6 bg-gray-50">
+      <section id="about" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
@@ -149,30 +257,31 @@ export default function Home() {
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Naniya Technologies Limited is a registered Kenyan technology
-                company founded in 2026. Based in Nairobi, we are dedicated to
-                building innovative digital solutions that address real
-                challenges faced by businesses across Africa.
+                company founded in 2026. Based in Nairobi, we build digital
+                products that address real challenges faced by communities and
+                businesses across Kenya.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Our focus is on leveraging technologies like WhatsApp Business
-                API, M-PESA integration, and modern web frameworks to create
-                products and services that are accessible, affordable, and
-                impactful.
+                Our flagship product, Chama Platform, is already live and
+                helping savings groups manage their finances through WhatsApp.
+                We leverage technologies like WhatsApp Business API, M-PESA
+                integration, and modern web frameworks to create products that
+                are accessible and impactful.
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
                 We believe technology should work for everyone — not just big
-                corporations. That&apos;s why we build solutions that empower small
-                businesses, community groups, and entrepreneurs to thrive in
-                the digital economy.
+                corporations. That&apos;s why we build solutions that empower
+                community groups, small businesses, and entrepreneurs to thrive
+                in the digital economy.
               </p>
               <div className="flex flex-wrap gap-4 text-sm">
-                <div className="bg-white px-4 py-2 rounded-lg border border-gray-200">
+                <div className="bg-gray-50 px-4 py-2 rounded-lg border border-gray-200">
                   📍 Nairobi, Kenya
                 </div>
-                <div className="bg-white px-4 py-2 rounded-lg border border-gray-200">
+                <div className="bg-gray-50 px-4 py-2 rounded-lg border border-gray-200">
                   🏢 Registered Company
                 </div>
-                <div className="bg-white px-4 py-2 rounded-lg border border-gray-200">
+                <div className="bg-gray-50 px-4 py-2 rounded-lg border border-gray-200">
                   🇰🇪 KRA Compliant
                 </div>
               </div>
@@ -209,79 +318,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Products */}
-      <section id="products" className="py-20 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Products
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Purpose-built digital products solving real problems for African
-              communities and businesses.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="rounded-2xl border border-gray-200 overflow-hidden hover:shadow-xl transition">
-              <div className="bg-gradient-to-r from-accent-500 to-accent-600 p-8 text-white">
-                <div className="text-4xl mb-3">🏦</div>
-                <h3 className="text-2xl font-bold">Chama Platform</h3>
-                <p className="text-white/80 mt-2">
-                  WhatsApp-first savings group management
-                </p>
-              </div>
-              <div className="p-6">
-                <p className="text-gray-600 mb-4">
-                  A comprehensive platform that helps Kenyan savings groups
-                  (chamas) manage contributions, track loans, and handle M-PESA
-                  transactions — all through WhatsApp.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {["WhatsApp Bot", "M-PESA", "Dashboard", "Auto-Tracking"].map(
-                    (tag) => (
-                      <span
-                        key={tag}
-                        className="bg-accent-50 text-accent-700 px-3 py-1 rounded-full text-xs font-medium"
-                      >
-                        {tag}
-                      </span>
-                    )
-                  )}
-                </div>
-              </div>
-            </div>
-            <div className="rounded-2xl border border-gray-200 overflow-hidden hover:shadow-xl transition">
-              <div className="bg-gradient-to-r from-primary-500 to-primary-600 p-8 text-white">
-                <div className="text-4xl mb-3">🛠️</div>
-                <h3 className="text-2xl font-bold">Custom Solutions</h3>
-                <p className="text-white/80 mt-2">
-                  Tailored technology for your business
-                </p>
-              </div>
-              <div className="p-6">
-                <p className="text-gray-600 mb-4">
-                  Need a custom WhatsApp bot, payment integration, or web
-                  application? We build bespoke solutions designed around your
-                  specific business requirements.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {["Bespoke", "Scalable", "Supported", "Affordable"].map(
-                    (tag) => (
-                      <span
-                        key={tag}
-                        className="bg-primary-50 text-primary-700 px-3 py-1 rounded-full text-xs font-medium"
-                      >
-                        {tag}
-                      </span>
-                    )
-                  )}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Contact */}
       <section id="contact" className="py-20 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
@@ -293,7 +329,17 @@ export default function Home() {
               Ready to transform your business with technology? Let&apos;s talk.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            <a
+              href="https://wa.me/254701557978"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center p-6 rounded-xl bg-white border border-gray-200 hover:border-accent-300 hover:shadow-lg transition text-center"
+            >
+              <div className="text-3xl mb-3">💬</div>
+              <h3 className="font-semibold text-gray-900 mb-1">WhatsApp</h3>
+              <p className="text-accent-600 text-sm">Message Us</p>
+            </a>
             <a
               href="mailto:info@naniya.co.ke"
               className="flex flex-col items-center p-6 rounded-xl bg-white border border-gray-200 hover:border-primary-300 hover:shadow-lg transition text-center"
@@ -303,20 +349,20 @@ export default function Home() {
               <p className="text-primary-600 text-sm">info@naniya.co.ke</p>
             </a>
             <a
-              href="tel:+254721506974"
+              href="tel:+254701557978"
               className="flex flex-col items-center p-6 rounded-xl bg-white border border-gray-200 hover:border-primary-300 hover:shadow-lg transition text-center"
             >
               <div className="text-3xl mb-3">📱</div>
               <h3 className="font-semibold text-gray-900 mb-1">Call Us</h3>
-              <p className="text-primary-600 text-sm">+254 721 506 974</p>
+              <p className="text-primary-600 text-sm">+254 701 557 978</p>
             </a>
             <div className="flex flex-col items-center p-6 rounded-xl bg-white border border-gray-200 text-center">
               <div className="text-3xl mb-3">📍</div>
               <h3 className="font-semibold text-gray-900 mb-1">Visit Us</h3>
               <p className="text-gray-600 text-sm">
-                Mararo Road, Lavington
+                Neptune Residency, Mararo Rd
                 <br />
-                Nairobi, Kenya
+                Lavington, Nairobi
               </p>
             </div>
           </div>
@@ -336,21 +382,21 @@ export default function Home() {
               </div>
               <p className="text-gray-400 text-sm leading-relaxed max-w-md">
                 Naniya Technologies Limited is a registered Kenyan company
-                providing innovative technology solutions for businesses across
-                Africa.
+                building products that help communities and businesses manage
+                their finances through technology.
               </p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>
+                  <a href="#products" className="hover:text-white transition">Products</a>
+                </li>
+                <li>
                   <a href="#services" className="hover:text-white transition">Services</a>
                 </li>
                 <li>
                   <a href="#about" className="hover:text-white transition">About</a>
-                </li>
-                <li>
-                  <a href="#products" className="hover:text-white transition">Products</a>
                 </li>
                 <li>
                   <a href="#contact" className="hover:text-white transition">Contact</a>

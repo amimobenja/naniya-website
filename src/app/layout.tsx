@@ -2,21 +2,25 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Naniya Technologies Limited | Technology Solutions for Africa",
+  title: "Naniya Technologies Limited | Chama Platform & Technology Solutions for Kenya",
   description:
-    "Naniya Technologies Limited is a Kenyan technology company providing innovative digital solutions including WhatsApp business automation, mobile money integration, and custom software development.",
+    "Naniya Technologies builds Chama Platform — a WhatsApp-first savings group management tool for Kenya with M-PESA integration. Manage contributions, loans, and group finances through WhatsApp. No app download needed.",
   keywords: [
     "Naniya Technologies",
-    "technology solutions Kenya",
-    "WhatsApp business automation",
+    "Chama Platform",
+    "chama management",
+    "WhatsApp savings group",
     "M-PESA integration",
+    "Kenya fintech",
+    "WhatsApp business automation",
     "software development Kenya",
-    "digital transformation Africa",
+    "LipaClear",
+    "M-PESA reconciliation",
   ],
   metadataBase: new URL("https://naniya.co.ke"),
   openGraph: {
-    title: "Naniya Technologies Limited",
-    description: "Innovative technology solutions for African businesses",
+    title: "Naniya Technologies — Chama Platform & Tech Solutions for Kenya",
+    description: "Chama Platform: manage your savings group through WhatsApp with M-PESA integration. Built by Naniya Technologies in Nairobi, Kenya.",
     url: "https://naniya.co.ke",
     siteName: "Naniya Technologies",
     locale: "en_KE",
@@ -26,14 +30,14 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Naniya Technologies — Technology Solutions for Africa",
+        alt: "Naniya Technologies — Chama Platform & Tech Solutions for Kenya",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Naniya Technologies Limited",
-    description: "Innovative technology solutions for African businesses",
+    title: "Naniya Technologies — Chama Platform",
+    description: "Manage your chama through WhatsApp with M-PESA integration. No app download needed.",
     images: ["/og-image.png"],
   },
   icons: {
