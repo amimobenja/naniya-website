@@ -1,0 +1,6 @@
+# robots.txt for naniya.co.ke
+
+User-agent: *
+Allow: /
+
+Sitemap: https://naniya.co.ke/sitemap.xml

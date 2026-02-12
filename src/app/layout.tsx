@@ -1,5 +1,12 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: '#2563eb',
+};
 
 export const metadata: Metadata = {
   title: "Naniya Technologies Limited | Chama Platform & Technology Solutions for Kenya",
@@ -49,9 +56,24 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
   manifest: "/site.webmanifest",
-  other: {
-    "theme-color": "#2563eb",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
+  alternates: {
+    canonical: 'https://naniya.co.ke',
+  },
+  authors: [{ name: 'Naniya Technologies Limited' }],
+  creator: 'Naniya Technologies Limited',
+  publisher: 'Naniya Technologies Limited',
+  category: 'Technology',
 };
 
 export default function RootLayout({

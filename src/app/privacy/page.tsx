@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
 
           <h2 className="text-2xl font-semibold text-gray-900 mt-8">Contact Us</h2>
           <p>For questions about this Privacy Policy, contact us at:</p>
-          <p>Naniya Technologies Limited<br />Mararo Road, Lavington<br />Nairobi, Kenya<br />Email: info@naniya.co.ke<br />Phone: +254 721 506 974</p>
+          <p>Naniya Technologies Limited<br />Neptune Residency, Mararo Road<br />Lavington, Nairobi<br />Email: info@naniya.co.ke<br />Phone: +254 701 557 978</p>
         </div>
       </div>
     </main>

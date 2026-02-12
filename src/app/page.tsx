@@ -1,15 +1,28 @@
+import MobileMenu from '@/components/MobileMenu';
+import StructuredData from '@/components/StructuredData';
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
+      <StructuredData />
+
+      {/* Skip to main content for accessibility */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary-600 focus:text-white focus:rounded-lg"
+      >
+        Skip to main content
+      </a>
+
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm border-b border-gray-100 z-50">
+      <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm border-b border-gray-100 z-50" role="navigation" aria-label="Main navigation">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <a href="/" className="flex items-center gap-2" aria-label="Naniya Technologies Home">
             <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">N</span>
             </div>
             <span className="text-xl font-bold text-gray-900">Naniya</span>
-          </div>
+          </a>
           <div className="hidden md:flex items-center gap-8 text-sm text-gray-600">
             <a href="https://chama.naniya.co.ke" target="_blank" rel="noopener noreferrer" className="hover:text-primary-600 transition">Chama Platform</a>
             <a href="#products" className="hover:text-primary-600 transition">Products</a>
@@ -17,19 +30,23 @@ export default function Home() {
             <a href="#about" className="hover:text-primary-600 transition">About</a>
             <a href="#contact" className="hover:text-primary-600 transition">Contact</a>
           </div>
-          <a
-            href="https://wa.me/254701557978"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-accent-600 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-accent-700 transition"
-          >
-            💬 WhatsApp Us
-          </a>
+          <div className="flex items-center gap-4">
+            <a
+              href="https://wa.me/254701557978"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-accent-600 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-accent-700 transition"
+              aria-label="Contact us on WhatsApp"
+            >
+              💬 WhatsApp Us
+            </a>
+            <MobileMenu />
+          </div>
         </div>
       </nav>
 
       {/* Hero */}
-      <section className="pt-32 pb-20 px-6">
+      <section id="main-content" className="pt-32 pb-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-accent-50 text-accent-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -51,7 +68,7 @@ export default function Home() {
                 href="https://chama.naniya.co.ke/signup"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-accent-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-accent-700 transition inline-flex items-center gap-2"
+                className="bg-accent-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent-700 transition-all hover:shadow-lg hover:scale-105 inline-flex items-center gap-2"
               >
                 🚀 Try Chama Platform
               </a>
@@ -59,7 +76,7 @@ export default function Home() {
                 href="https://wa.me/254701557978"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-medium hover:border-accent-300 hover:text-accent-600 transition inline-flex items-center gap-2"
+                className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:border-accent-500 hover:text-accent-600 hover:bg-accent-50 transition-all inline-flex items-center gap-2"
               >
                 💬 WhatsApp Us
               </a>
@@ -99,8 +116,8 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {/* Chama Platform — LIVE */}
-            <div className="rounded-2xl border border-gray-200 overflow-hidden hover:shadow-xl transition">
-              <div className="bg-gradient-to-r from-accent-500 to-accent-600 p-8 text-white relative">
+            <div className="rounded-2xl border border-gray-200 overflow-hidden hover:shadow-2xl hover:border-accent-300 transition-all duration-300 group">
+              <div className="bg-gradient-to-br from-accent-500 to-accent-600 p-8 text-white relative">
                 <div className="absolute top-4 right-4 bg-white text-accent-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
                   ✅ Live
                 </div>
@@ -139,7 +156,7 @@ export default function Home() {
                     href="https://chama.naniya.co.ke"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-accent-600 text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-accent-700 transition"
+                    className="inline-flex items-center justify-center gap-2 bg-accent-600 text-white px-6 py-3 rounded-lg text-sm font-semibold hover:bg-accent-700 transition-all hover:shadow-lg hover:scale-105"
                   >
                     Try Chama Platform →
                   </a>
@@ -156,8 +173,8 @@ export default function Home() {
             </div>
 
             {/* LipaClear — Coming Soon */}
-            <div className="rounded-2xl border border-gray-200 overflow-hidden hover:shadow-xl transition">
-              <div className="bg-gradient-to-r from-primary-500 to-primary-600 p-8 text-white relative">
+            <div className="rounded-2xl border border-gray-200 overflow-hidden hover:shadow-2xl hover:border-primary-300 transition-all duration-300 group">
+              <div className="bg-gradient-to-br from-primary-500 to-primary-600 p-8 text-white relative">
                 <div className="absolute top-4 right-4 bg-white/90 text-primary-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
                   🚀 Coming Soon
                 </div>
@@ -245,10 +262,12 @@ export default function Home() {
             ].map((service) => (
               <div
                 key={service.title}
-                className="p-6 rounded-xl border border-gray-200 bg-white hover:border-primary-200 hover:shadow-lg transition group"
+                className="p-6 rounded-xl border border-gray-200 bg-white hover:border-primary-300 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1"
               >
-                <div className="text-3xl mb-4">{service.icon}</div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-primary-600 transition">
+                <div className="text-4xl mb-4 transition-transform group-hover:scale-110">
+                  {service.icon}
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition">
                   {service.title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
@@ -347,31 +366,31 @@ export default function Home() {
               href="https://wa.me/254701557978"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center p-6 rounded-xl bg-white border border-gray-200 hover:border-accent-300 hover:shadow-lg transition text-center"
+              className="flex flex-col items-center p-6 rounded-xl bg-white border-2 border-gray-200 hover:border-accent-400 hover:shadow-xl transition-all duration-300 text-center group hover:-translate-y-1"
             >
-              <div className="text-3xl mb-3">💬</div>
-              <h3 className="font-semibold text-gray-900 mb-1">WhatsApp</h3>
-              <p className="text-accent-600 text-sm">Message Us</p>
+              <div className="text-4xl mb-3 transition-transform group-hover:scale-110">💬</div>
+              <h3 className="font-bold text-gray-900 mb-1">WhatsApp</h3>
+              <p className="text-accent-600 text-sm font-medium">Message Us</p>
             </a>
             <a
               href="mailto:info@naniya.co.ke"
-              className="flex flex-col items-center p-6 rounded-xl bg-white border border-gray-200 hover:border-primary-300 hover:shadow-lg transition text-center"
+              className="flex flex-col items-center p-6 rounded-xl bg-white border-2 border-gray-200 hover:border-primary-400 hover:shadow-xl transition-all duration-300 text-center group hover:-translate-y-1"
             >
-              <div className="text-3xl mb-3">📧</div>
-              <h3 className="font-semibold text-gray-900 mb-1">Email Us</h3>
-              <p className="text-primary-600 text-sm">info@naniya.co.ke</p>
+              <div className="text-4xl mb-3 transition-transform group-hover:scale-110">📧</div>
+              <h3 className="font-bold text-gray-900 mb-1">Email Us</h3>
+              <p className="text-primary-600 text-sm font-medium break-all">info@naniya.co.ke</p>
             </a>
             <a
               href="tel:+254701557978"
-              className="flex flex-col items-center p-6 rounded-xl bg-white border border-gray-200 hover:border-primary-300 hover:shadow-lg transition text-center"
+              className="flex flex-col items-center p-6 rounded-xl bg-white border-2 border-gray-200 hover:border-primary-400 hover:shadow-xl transition-all duration-300 text-center group hover:-translate-y-1"
             >
-              <div className="text-3xl mb-3">📱</div>
-              <h3 className="font-semibold text-gray-900 mb-1">Call Us</h3>
-              <p className="text-primary-600 text-sm">+254 701 557 978</p>
+              <div className="text-4xl mb-3 transition-transform group-hover:scale-110">📱</div>
+              <h3 className="font-bold text-gray-900 mb-1">Call Us</h3>
+              <p className="text-primary-600 text-sm font-medium">+254 701 557 978</p>
             </a>
-            <div className="flex flex-col items-center p-6 rounded-xl bg-white border border-gray-200 text-center">
-              <div className="text-3xl mb-3">📍</div>
-              <h3 className="font-semibold text-gray-900 mb-1">Visit Us</h3>
+            <div className="flex flex-col items-center p-6 rounded-xl bg-white border-2 border-gray-200 text-center hover:border-gray-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-4xl mb-3">📍</div>
+              <h3 className="font-bold text-gray-900 mb-1">Visit Us</h3>
               <p className="text-gray-600 text-sm">
                 Neptune Residency, Mararo Rd
                 <br />
