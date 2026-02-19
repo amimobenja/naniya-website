@@ -361,7 +361,7 @@ export default function Home() {
               Ready to transform your business with technology? Let&apos;s talk.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <a
               href="https://wa.me/254701557978"
               target="_blank"
@@ -388,7 +388,6 @@ export default function Home() {
               <h3 className="font-bold text-gray-900 mb-1">Call Us</h3>
               <p className="text-primary-600 text-sm font-medium">+254 701 557 978</p>
             </a>
-{/* Visit Us section temporarily removed */}
           </div>
         </div>
       </section>
