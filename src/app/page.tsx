@@ -388,15 +388,7 @@ export default function Home() {
               <h3 className="font-bold text-gray-900 mb-1">Call Us</h3>
               <p className="text-primary-600 text-sm font-medium">+254 701 557 978</p>
             </a>
-            <div className="flex flex-col items-center p-6 rounded-xl bg-white border-2 border-gray-200 text-center hover:border-gray-300 hover:shadow-lg transition-all duration-300">
-              <div className="text-4xl mb-3">📍</div>
-              <h3 className="font-bold text-gray-900 mb-1">Visit Us</h3>
-              <p className="text-gray-600 text-sm">
-                Neptune Residency, Mararo Rd
-                <br />
-                Lavington, Nairobi
-              </p>
-            </div>
+{/* Visit Us section temporarily removed */}
           </div>
         </div>
       </section>
