@@ -41,15 +41,6 @@ export default function MobileMenu() {
         <div className="absolute top-full left-0 right-0 bg-white border-b border-gray-100 shadow-lg">
           <nav className="flex flex-col py-4">
             <a
-              href="https://chama.naniya.co.ke"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 text-gray-600 hover:text-primary-600 hover:bg-gray-50 transition"
-              onClick={() => setIsOpen(false)}
-            >
-              Chama Platform
-            </a>
-            <a
               href="#products"
               className="px-6 py-3 text-gray-600 hover:text-primary-600 hover:bg-gray-50 transition"
               onClick={() => setIsOpen(false)}

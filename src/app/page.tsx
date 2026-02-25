@@ -24,7 +24,6 @@ export default function Home() {
             <span className="text-xl font-bold text-gray-900">Naniya</span>
           </a>
           <div className="hidden md:flex items-center gap-8 text-sm text-gray-600">
-            <a href="https://chama.naniya.co.ke" target="_blank" rel="noopener noreferrer" className="hover:text-primary-600 transition">Chama Platform</a>
             <a href="#products" className="hover:text-primary-600 transition">Products</a>
             <a href="#services" className="hover:text-primary-600 transition">Services</a>
             <a href="#about" className="hover:text-primary-600 transition">About</a>
@@ -51,26 +50,24 @@ export default function Home() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-accent-50 text-accent-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
               <span className="w-2 h-2 bg-accent-500 rounded-full animate-pulse" />
-              Chama Platform is LIVE
+              Both Products Now LIVE
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              Manage Your Chama{" "}
-              <span className="text-primary-600">Right From WhatsApp</span>
+              Technology Solutions{" "}
+              <span className="text-primary-600">Built for Kenya</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl">
               Naniya Technologies builds products that solve real problems for
-              Kenyan communities. Our flagship product, Chama Platform, lets
-              savings groups track contributions, manage loans, and process
-              M-PESA payments — all through WhatsApp. No app download needed.
+              Kenyan communities and businesses. From WhatsApp-based chama management
+              to automated M-PESA reconciliation — we deliver powerful, accessible
+              solutions designed for the Kenyan market.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
-                href="https://chama.naniya.co.ke/signup"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#products"
                 className="bg-accent-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent-700 transition-all hover:shadow-lg hover:scale-105 inline-flex items-center gap-2"
               >
-                🚀 Try Chama Platform
+                🚀 Explore Our Products
               </a>
               <a
                 href="https://wa.me/254701557978"
@@ -161,27 +158,25 @@ export default function Home() {
                     Try Chama Platform →
                   </a>
                   <a
-                    href="https://wa.me/254701557978"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/products/chama-platform"
                     className="text-xs text-gray-500 hover:text-accent-600 transition"
                   >
-                    or message us on WhatsApp
+                    Learn more about Chama Platform
                   </a>
                 </div>
               </div>
             </div>
 
-            {/* LipaClear — Coming Soon */}
+            {/* LipaClear — LIVE */}
             <div className="rounded-2xl border border-gray-200 overflow-hidden hover:shadow-2xl hover:border-primary-300 transition-all duration-300 group">
               <div className="bg-gradient-to-br from-primary-500 to-primary-600 p-8 text-white relative">
-                <div className="absolute top-4 right-4 bg-white/90 text-primary-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
-                  🚀 Coming Soon
+                <div className="absolute top-4 right-4 bg-white text-primary-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
+                  ✅ Live
                 </div>
                 <div className="text-4xl mb-3">📊</div>
                 <h3 className="text-2xl font-bold">LipaClear</h3>
                 <p className="text-white/80 mt-2">
-                  M-PESA reconciliation for businesses
+                  M-PESA reconciliation SaaS for Kenyan SMEs
                 </p>
               </div>
               <div className="p-6">
@@ -189,14 +184,17 @@ export default function Home() {
                   Stop manually matching M-PESA statements with your records.
                   LipaClear automatically reconciles M-PESA transaction
                   statements with your internal business records — saving hours
-                  of tedious bookkeeping and reducing errors.
+                  of tedious bookkeeping and reducing errors. Upload your CSV,
+                  get instant variance reports, and receive WhatsApp alerts.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
                   {[
-                    "M-PESA Statements",
+                    "CSV Upload",
                     "Auto-Reconciliation",
-                    "Error Detection",
-                    "Business Reports",
+                    "Variance Analysis",
+                    "PDF Reports",
+                    "WhatsApp Alerts",
+                    "Multi-tenant",
                   ].map((tag) => (
                     <span
                       key={tag}
@@ -206,9 +204,22 @@ export default function Home() {
                     </span>
                   ))}
                 </div>
-                <span className="inline-flex items-center gap-2 text-primary-600 text-sm font-medium">
-                  Fully built — launching soon
-                </span>
+                <div className="flex flex-col gap-2">
+                  <a
+                    href="https://lipaclear.naniya.co.ke"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-primary-600 text-white px-6 py-3 rounded-lg text-sm font-semibold hover:bg-primary-700 transition-all hover:shadow-lg hover:scale-105"
+                  >
+                    Try LipaClear →
+                  </a>
+                  <a
+                    href="/products/lipaclear"
+                    className="text-xs text-gray-500 hover:text-primary-600 transition"
+                  >
+                    Learn more about LipaClear
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -416,7 +427,7 @@ export default function Home() {
                   <a href="https://chama.naniya.co.ke" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Chama Platform</a>
                 </li>
                 <li>
-                  <span className="text-gray-500">LipaClear — Coming Soon</span>
+                  <a href="https://lipaclear.naniya.co.ke" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">LipaClear</a>
                 </li>
               </ul>
             </div>
