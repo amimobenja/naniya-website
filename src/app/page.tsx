@@ -231,44 +231,43 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Services
+              Professional Services
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We provide end-to-end technology solutions tailored for African
-              businesses and their unique needs.
+              Expert technology consulting and development services that deliver measurable results for your business.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                icon: "💬",
-                title: "WhatsApp Business Automation",
-                desc: "Build powerful chatbots, automate customer communications, and manage group interactions using the WhatsApp Business API.",
+                icon: "🤖",
+                title: "AI Solutions & Integration",
+                desc: "Deploy production-ready AI systems powered by LLMs. From intelligent chatbots to automated workflows and custom AI agents that reduce operational overhead and improve decision-making.",
               },
               {
-                icon: "💰",
-                title: "Mobile Money Integration",
-                desc: "Seamless M-PESA and mobile money payment integration for your applications, with real-time transaction processing and reconciliation.",
+                icon: "🔗",
+                title: "Technology Integration & Consulting",
+                desc: "Strategic technology planning and seamless system integration. We connect disparate platforms, modernize legacy systems, and architect solutions that scale with your business.",
               },
               {
-                icon: "🖥️",
-                title: "Custom Software Development",
-                desc: "Full-stack web and mobile application development using modern technologies like Next.js, React, and Node.js.",
-              },
-              {
-                icon: "☁️",
-                title: "Cloud & Infrastructure",
-                desc: "Cloud architecture, deployment, and DevOps services to keep your applications running smoothly and securely.",
-              },
-              {
-                icon: "📊",
-                title: "Data & Analytics",
-                desc: "Turn your business data into actionable insights with custom dashboards, reporting tools, and analytics solutions.",
+                icon: "🚀",
+                title: "DevOps",
+                desc: "Accelerate delivery with automated CI/CD pipelines, infrastructure as code, and cloud deployments. We optimize your development lifecycle from commit to production.",
               },
               {
                 icon: "🔒",
+                title: "DevSecOps",
+                desc: "Security-first development practices embedded in your workflow. Automated vulnerability scanning, secure pipelines, compliance monitoring, and proactive threat mitigation.",
+              },
+              {
+                icon: "💻",
+                title: "Custom Software Development",
+                desc: "Build scalable, maintainable applications tailored to your requirements. Full-stack development using modern frameworks, clean architecture, and best practices.",
+              },
+              {
+                icon: "⚡",
                 title: "API Development & Integration",
-                desc: "Build robust APIs and integrate third-party services to connect your systems and streamline operations.",
+                desc: "Design and implement robust RESTful and GraphQL APIs. Integrate third-party services, ensure data consistency, and build the backbone for your digital ecosystem.",
               },
             ].map((service) => (
               <div
@@ -286,6 +285,16 @@ export default function Home() {
                 </p>
               </div>
             ))}
+          </div>
+          <div className="mt-12 text-center">
+            <a
+              href="https://wa.me/254701557978?text=Hi%2C%20I'm%20interested%20in%20learning%20more%20about%20Naniya's%20professional%20services"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-700 transition-all hover:shadow-lg hover:scale-105"
+            >
+              💬 Discuss Your Project
+            </a>
           </div>
         </div>
       </section>
