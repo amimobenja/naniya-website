@@ -1,3 +1,5 @@
+import { ADDRESS, EMAIL, PHONE } from '@/lib/contact';
+
 export default function TermsOfService() {
   return (
     <main className="min-h-screen bg-white">
@@ -32,7 +34,7 @@ export default function TermsOfService() {
 
           <h2 className="text-2xl font-semibold text-gray-900 mt-8">Contact Us</h2>
           <p>For questions about these Terms, contact us at:</p>
-          <p>Naniya Technologies Limited<br />Neptune Residency, Mararo Road<br />Lavington, Nairobi<br />Email: info@naniya.co.ke<br />Phone: +254 701 557 978</p>
+          <p>Naniya Technologies Limited<br />{ADDRESS.building}, {ADDRESS.street}<br />{ADDRESS.neighborhood}, {ADDRESS.city}<br />Email: {EMAIL}<br />Phone: {PHONE.display}</p>
         </div>
       </div>
     </main>

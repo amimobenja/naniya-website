@@ -1,3 +1,5 @@
+import { ADDRESS, EMAIL, PHONE, SITE_DOMAIN } from '@/lib/contact';
+
 export default function PrivacyPolicy() {
   return (
     <main className="min-h-screen bg-white">
@@ -6,7 +8,7 @@ export default function PrivacyPolicy() {
         <h1 className="text-4xl font-bold text-gray-900 mb-8">Privacy Policy</h1>
         <div className="prose prose-gray max-w-none space-y-6 text-gray-600 leading-relaxed">
           <p><strong>Last updated:</strong> February 4, 2026</p>
-          <p>Naniya Technologies Limited (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) operates the naniya.co.ke website and related digital services. This Privacy Policy explains how we collect, use, and protect your personal information.</p>
+          <p>Naniya Technologies Limited (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) operates the {SITE_DOMAIN} website and related digital services. This Privacy Policy explains how we collect, use, and protect your personal information.</p>
 
           <h2 className="text-2xl font-semibold text-gray-900 mt-8">Information We Collect</h2>
           <p>We may collect the following types of information:</p>
@@ -31,11 +33,11 @@ export default function PrivacyPolicy() {
           <p>We may use third-party services including WhatsApp Business API and M-PESA for service delivery. These services have their own privacy policies governing the use of your information.</p>
 
           <h2 className="text-2xl font-semibold text-gray-900 mt-8">Your Rights</h2>
-          <p>Under the Kenya Data Protection Act, you have the right to access, correct, or delete your personal data. Contact us at info@naniya.co.ke to exercise these rights.</p>
+          <p>Under the Kenya Data Protection Act, you have the right to access, correct, or delete your personal data. Contact us at {EMAIL} to exercise these rights.</p>
 
           <h2 className="text-2xl font-semibold text-gray-900 mt-8">Contact Us</h2>
           <p>For questions about this Privacy Policy, contact us at:</p>
-          <p>Naniya Technologies Limited<br />Neptune Residency, Mararo Road<br />Lavington, Nairobi<br />Email: info@naniya.co.ke<br />Phone: +254 701 557 978</p>
+          <p>Naniya Technologies Limited<br />{ADDRESS.building}, {ADDRESS.street}<br />{ADDRESS.neighborhood}, {ADDRESS.city}<br />Email: {EMAIL}<br />Phone: {PHONE.display}</p>
         </div>
       </div>
     </main>

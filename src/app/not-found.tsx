@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { WHATSAPP_URL } from '@/lib/contact';
 
 export default function NotFound() {
   return (
@@ -24,7 +25,7 @@ export default function NotFound() {
             Back to Home
           </Link>
           <a
-            href="https://wa.me/254701557978"
+            href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border-2 border-gray-200 text-gray-700 px-7 py-3.5 rounded-xl font-semibold hover:border-accent-300 hover:text-accent-700 hover:bg-accent-50/50 transition-all"

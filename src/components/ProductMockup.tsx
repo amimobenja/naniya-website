@@ -1,6 +1,8 @@
 // Professional browser-frame product mockup built with CSS
 // Shows a stylized version of the live product UI
 
+import { PRODUCT_DOMAINS } from '@/lib/contact';
+
 interface ProductMockupProps {
   variant: 'chama' | 'lipaclear';
 }
@@ -38,7 +40,7 @@ function BrowserFrame({ children, url, accentColor }: { children: React.ReactNod
 
 function ChamaMockup() {
   return (
-    <BrowserFrame url="chama.naniya.co.ke" accentColor="from-green-50 to-emerald-50">
+    <BrowserFrame url={PRODUCT_DOMAINS.chama} accentColor="from-green-50 to-emerald-50">
       <div className="p-4 md:p-6 space-y-4">
         {/* Nav bar */}
         <div className="flex items-center justify-between pb-3 border-b border-gray-100">
@@ -100,7 +102,7 @@ function ChamaMockup() {
 
 function LipaClearMockup() {
   return (
-    <BrowserFrame url="lipaclear.naniya.co.ke" accentColor="from-blue-50 to-indigo-50">
+    <BrowserFrame url={PRODUCT_DOMAINS.lipaclear} accentColor="from-blue-50 to-indigo-50">
       <div className="p-4 md:p-6 space-y-4">
         {/* Nav bar */}
         <div className="flex items-center justify-between pb-3 border-b border-gray-100">

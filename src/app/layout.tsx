@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { SITE_URL } from "@/lib/contact";
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -24,11 +25,11 @@ export const metadata: Metadata = {
     "LipaClear",
     "M-PESA reconciliation",
   ],
-  metadataBase: new URL("https://naniya.co.ke"),
+  metadataBase: new URL(SITE_URL),
   openGraph: {
     title: "Naniya Technologies — Chama Platform & Tech Solutions for Kenya",
     description: "Chama Platform: manage your savings group through WhatsApp with M-PESA integration. Built by Naniya Technologies in Nairobi, Kenya.",
-    url: "https://naniya.co.ke",
+    url: SITE_URL,
     siteName: "Naniya Technologies",
     locale: "en_KE",
     type: "website",
@@ -68,7 +69,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://naniya.co.ke',
+    canonical: SITE_URL,
   },
   authors: [{ name: 'Naniya Technologies Limited' }],
   creator: 'Naniya Technologies Limited',

@@ -1,27 +1,29 @@
+import { ADDRESS, PHONE, PRODUCT_URLS, SITE_URL } from '@/lib/contact';
+
 export default function StructuredData() {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Naniya Technologies Limited',
-    url: 'https://naniya.co.ke',
-    logo: 'https://naniya.co.ke/icon-512.png',
+    url: SITE_URL,
+    logo: `${SITE_URL}/icon-512.png`,
     description:
       'Naniya Technologies builds Chama Platform — a WhatsApp-first savings group management tool for Kenya with M-PESA integration.',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Neptune Residency, Mararo Road',
-      addressLocality: 'Lavington',
-      addressRegion: 'Nairobi',
-      addressCountry: 'KE',
+      streetAddress: `${ADDRESS.building}, ${ADDRESS.street}, ${ADDRESS.neighborhood}`,
+      addressLocality: ADDRESS.city,
+      addressRegion: ADDRESS.city,
+      addressCountry: ADDRESS.countryCode,
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+254-701-557-978',
+      telephone: PHONE.hyphenated,
       contactType: 'Customer Service',
       availableLanguage: ['English', 'Swahili'],
     },
     sameAs: [
-      'https://chama.naniya.co.ke',
+      PRODUCT_URLS.chama,
     ],
   };
 
@@ -29,7 +31,7 @@ export default function StructuredData() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Naniya Technologies',
-    url: 'https://naniya.co.ke',
+    url: SITE_URL,
     description:
       'Chama Platform and technology solutions for Kenya',
     publisher: {
@@ -51,7 +53,7 @@ export default function StructuredData() {
     },
     description:
       'WhatsApp-first savings group management for Kenya with M-PESA integration',
-    url: 'https://chama.naniya.co.ke',
+    url: PRODUCT_URLS.chama,
     author: {
       '@type': 'Organization',
       name: 'Naniya Technologies Limited',
