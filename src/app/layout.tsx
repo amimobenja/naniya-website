@@ -6,7 +6,8 @@ import { SITE_DOMAIN, SITE_URL } from "@/lib/contact";
 const PLAUSIBLE_DOMAIN =
   process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN ?? SITE_DOMAIN;
 const PLAUSIBLE_SCRIPT_SRC =
-  process.env.NEXT_PUBLIC_PLAUSIBLE_SRC ?? "https://plausible.io/js/script.js";
+  process.env.NEXT_PUBLIC_PLAUSIBLE_SRC ??
+  "https://plausible.io/js/script.file-downloads.hash.outbound-links.tagged-events.js";
 
 export const viewport: Viewport = {
   width: 'device-width',

@@ -51,14 +51,40 @@ Plausible Analytics is loaded in `src/app/layout.tsx` via `next/script` with
 `strategy="afterInteractive"`. No cookie banner is needed because Plausible
 doesn't use cookies or store personal data.
 
+### Script variant
+
+The default script is the **enhanced bundle**:
+
+```
+https://plausible.io/js/script.file-downloads.hash.outbound-links.tagged-events.js
+```
+
+It enables four extensions that power the auto-goals configured on the
+Plausible site for `naniya.co.ke`:
+
+| Extension          | What it tracks                                                            | Auto-goal it powers              |
+| ------------------ | ------------------------------------------------------------------------- | -------------------------------- |
+| `outbound-links`   | Clicks on any link whose hostname differs from the current page           | **Outbound Link: Click**         |
+| `file-downloads`   | Clicks on links to PDFs, ZIPs, CSVs, images, archives, etc.               | **File Download**                |
+| `hash`             | Hash-fragment route changes (e.g. `/#products`, `/#contact`)              | counts in-page section views     |
+| `tagged-events`    | Custom events declared with `class="plausible-event-name=…"` on elements  | any `Form Submission` and custom |
+
+The Plausible site also has a **404** auto-goal — Next.js renders the 404 page
+at `/_not-found` and the script automatically fires a pageview, so no extra
+client code is needed.
+
+If you swap the variant, keep the auto-goals in mind: dropping
+`outbound-links`, for example, silently kills the "Outbound Link: Click" goal
+in the Plausible dashboard.
+
 ### Configuration
 
 Two optional environment variables tune the script:
 
-| Variable                         | Default                              | Use it to…                                     |
-| -------------------------------- | ------------------------------------ | ---------------------------------------------- |
-| `NEXT_PUBLIC_PLAUSIBLE_DOMAIN`   | `naniya.co.ke` (from `SITE_DOMAIN`)  | Point a preview deploy at a different site     |
-| `NEXT_PUBLIC_PLAUSIBLE_SRC`      | `https://plausible.io/js/script.js`  | Switch to a self-hosted Plausible or a variant |
+| Variable                         | Default                                                                                                | Use it to…                                     |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------- |
+| `NEXT_PUBLIC_PLAUSIBLE_DOMAIN`   | `naniya.co.ke` (from `SITE_DOMAIN`)                                                                    | Point a preview deploy at a different site     |
+| `NEXT_PUBLIC_PLAUSIBLE_SRC`      | `https://plausible.io/js/script.file-downloads.hash.outbound-links.tagged-events.js`                   | Switch to a self-hosted Plausible or a variant |
 
 Create a `.env.local` (gitignored) if you need to override either:
 
