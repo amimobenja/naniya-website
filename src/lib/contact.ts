@@ -29,6 +29,7 @@ export const ADDRESS = {
   street: 'Mararo Road',
   neighborhood: 'Lavington',
   city: 'Nairobi',
+  region: 'Nairobi County',
   country: 'Kenya',
   countryCode: 'KE',
 } as const;
