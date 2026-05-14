@@ -1,6 +1,12 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "./globals.css";
-import { SITE_URL } from "@/lib/contact";
+import { SITE_DOMAIN, SITE_URL } from "@/lib/contact";
+
+const PLAUSIBLE_DOMAIN =
+  process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN ?? SITE_DOMAIN;
+const PLAUSIBLE_SCRIPT_SRC =
+  process.env.NEXT_PUBLIC_PLAUSIBLE_SRC ?? "https://plausible.io/js/script.js";
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -88,7 +94,14 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
-      <body className="antialiased font-sans">{children}</body>
+      <body className="antialiased font-sans">
+        {children}
+        <Script
+          src={PLAUSIBLE_SCRIPT_SRC}
+          data-domain={PLAUSIBLE_DOMAIN}
+          strategy="afterInteractive"
+        />
+      </body>
     </html>
   );
 }
