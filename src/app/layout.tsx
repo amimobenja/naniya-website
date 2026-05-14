@@ -1,5 +1,12 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "./globals.css";
+import { SITE_DOMAIN, SITE_URL } from "@/lib/contact";
+
+const PLAUSIBLE_DOMAIN =
+  process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN ?? SITE_DOMAIN;
+const PLAUSIBLE_SCRIPT_SRC =
+  process.env.NEXT_PUBLIC_PLAUSIBLE_SRC ?? "https://plausible.io/js/script.js";
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -24,11 +31,11 @@ export const metadata: Metadata = {
     "LipaClear",
     "M-PESA reconciliation",
   ],
-  metadataBase: new URL("https://naniya.co.ke"),
+  metadataBase: new URL(SITE_URL),
   openGraph: {
     title: "Naniya Technologies — Chama Platform & Tech Solutions for Kenya",
     description: "Chama Platform: manage your savings group through WhatsApp with M-PESA integration. Built by Naniya Technologies in Nairobi, Kenya.",
-    url: "https://naniya.co.ke",
+    url: SITE_URL,
     siteName: "Naniya Technologies",
     locale: "en_KE",
     type: "website",
@@ -68,7 +75,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://naniya.co.ke',
+    canonical: SITE_URL,
   },
   authors: [{ name: 'Naniya Technologies Limited' }],
   creator: 'Naniya Technologies Limited',
@@ -87,7 +94,14 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
-      <body className="antialiased font-sans">{children}</body>
+      <body className="antialiased font-sans">
+        {children}
+        <Script
+          src={PLAUSIBLE_SCRIPT_SRC}
+          data-domain={PLAUSIBLE_DOMAIN}
+          strategy="afterInteractive"
+        />
+      </body>
     </html>
   );
 }

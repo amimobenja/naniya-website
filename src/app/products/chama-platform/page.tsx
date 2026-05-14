@@ -6,6 +6,7 @@ import {
   WhatsAppIcon, ArrowRightIcon, BankIcon, ChatIcon, WalletIcon,
   GridIcon, BellIcon, UsersIcon, DocumentIcon, CheckCircleIcon,
 } from '@/components/Icons';
+import { PRODUCT_DOMAINS, PRODUCT_URLS, WHATSAPP_URL } from '@/lib/contact';
 
 export const metadata: Metadata = {
   title: "Chama Platform - WhatsApp Savings Group Management | Naniya Technologies",
@@ -44,7 +45,7 @@ export default function ChamaPlatformPage() {
               Home
             </Link>
             <a
-              href="https://chama.naniya.co.ke"
+              href={PRODUCT_URLS.chama}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-accent-600 text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-accent-700 transition-all hover:shadow-md inline-flex items-center gap-2"
@@ -82,7 +83,7 @@ export default function ChamaPlatformPage() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="https://chama.naniya.co.ke"
+                  href={PRODUCT_URLS.chama}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-accent-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-accent-700 transition-all hover:shadow-lg hover:shadow-accent-600/20 hover:-translate-y-0.5"
@@ -91,7 +92,7 @@ export default function ChamaPlatformPage() {
                   <ArrowRightIcon size={18} />
                 </a>
                 <a
-                  href="https://wa.me/254701557978"
+                  href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 border-2 border-gray-200 text-gray-700 px-7 py-3.5 rounded-xl font-semibold hover:border-accent-300 hover:text-accent-700 hover:bg-accent-50/50 transition-all"
@@ -159,7 +160,7 @@ export default function ChamaPlatformPage() {
           </ScrollReveal>
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { step: "1", title: "Sign Up", desc: "Visit chama.naniya.co.ke and create your group account. Takes less than 2 minutes." },
+              { step: "1", title: "Sign Up", desc: `Visit ${PRODUCT_DOMAINS.chama} and create your group account. Takes less than 2 minutes.` },
               { step: "2", title: "Connect WhatsApp", desc: "Link your chama's WhatsApp number or use our provided number to get started." },
               { step: "3", title: "Add Members", desc: "Invite your chama members via WhatsApp. They can interact with the bot instantly." },
               { step: "4", title: "Start Managing", desc: "Record contributions, track loans, send reminders — all from WhatsApp." },
@@ -202,7 +203,7 @@ export default function ChamaPlatformPage() {
               </div>
               <div className="flex justify-center">
                 <a
-                  href="https://wa.me/254701557978"
+                  href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-accent-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-accent-700 transition-all hover:shadow-lg hover:shadow-accent-600/20 hover:-translate-y-0.5"
@@ -230,7 +231,7 @@ export default function ChamaPlatformPage() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a
-              href="https://chama.naniya.co.ke"
+              href={PRODUCT_URLS.chama}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-accent-600 px-7 py-3.5 rounded-xl font-semibold hover:bg-gray-50 transition-all hover:shadow-lg"
@@ -239,7 +240,7 @@ export default function ChamaPlatformPage() {
               <ArrowRightIcon size={18} />
             </a>
             <a
-              href="https://wa.me/254701557978"
+              href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 border-2 border-white text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-white/10 transition-all"

@@ -8,6 +8,17 @@ import {
   EnvelopeIcon, PhoneIcon, MapPinIcon, BuildingIcon, FlagIcon,
   CheckCircleIcon,
 } from '@/components/Icons';
+import {
+  ADDRESS,
+  EMAIL,
+  GOOGLE_MAPS_URL,
+  MAILTO_URL,
+  PHONE,
+  PRODUCT_URLS,
+  TEL_URL,
+  WHATSAPP_URL,
+  whatsAppUrlWithMessage,
+} from '@/lib/contact';
 
 export default function Home() {
   return (
@@ -39,7 +50,7 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-3">
             <a
-              href="https://wa.me/254701557978"
+              href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:inline-flex items-center gap-2 bg-accent-600 text-white px-4 py-2.5 rounded-xl text-sm font-semibold hover:bg-accent-700 transition-all hover:shadow-md"
@@ -85,7 +96,7 @@ export default function Home() {
                   <ArrowRightIcon size={18} />
                 </a>
                 <a
-                  href="https://wa.me/254701557978"
+                  href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 border-2 border-gray-200 text-gray-700 px-7 py-3.5 rounded-xl font-semibold hover:border-accent-300 hover:text-accent-700 hover:bg-accent-50/50 transition-all"
@@ -186,7 +197,7 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col gap-2">
                     <a
-                      href="https://chama.naniya.co.ke"
+                      href={PRODUCT_URLS.chama}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2 bg-accent-600 text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-accent-700 transition-all hover:shadow-lg hover:shadow-accent-600/20"
@@ -240,7 +251,7 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col gap-2">
                     <a
-                      href="https://lipaclear.naniya.co.ke"
+                      href={PRODUCT_URLS.lipaclear}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2 bg-primary-600 text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-primary-700 transition-all hover:shadow-lg hover:shadow-primary-600/20"
@@ -379,7 +390,7 @@ export default function Home() {
           <ScrollReveal delay={300}>
             <div className="mt-12 text-center">
               <a
-                href="https://wa.me/254701557978?text=Hi%2C%20I'm%20interested%20in%20learning%20more%20about%20Naniya's%20professional%20services"
+                href={whatsAppUrlWithMessage("Hi, I'm interested in learning more about Naniya's professional services")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-primary-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-primary-700 transition-all hover:shadow-lg hover:shadow-primary-600/20 hover:-translate-y-0.5"
@@ -475,39 +486,39 @@ export default function Home() {
                   </div>
                   <h2 className="text-2xl md:text-3xl font-bold mb-4 tracking-tight">Visit Us</h2>
                   <p className="text-gray-300 leading-relaxed mb-6">
-                    Our office is located in the heart of Lavington, Nairobi. We&apos;d love to meet
+                    Our office is located in the heart of {ADDRESS.neighborhood}, {ADDRESS.city}. We&apos;d love to meet
                     and discuss how we can help with your technology needs.
                   </p>
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">
                       <BuildingIcon className="text-primary-400 mt-1 flex-shrink-0" size={18} />
                       <div>
-                        <p className="font-semibold text-white">Neptune Residency</p>
-                        <p className="text-gray-400 text-sm">Mararo Road, Lavington</p>
-                        <p className="text-gray-400 text-sm">Nairobi, Kenya</p>
+                        <p className="font-semibold text-white">{ADDRESS.building}</p>
+                        <p className="text-gray-400 text-sm">{ADDRESS.street}, {ADDRESS.neighborhood}</p>
+                        <p className="text-gray-400 text-sm">{ADDRESS.city}, {ADDRESS.country}</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
                       <PhoneIcon className="text-primary-400 flex-shrink-0" size={18} />
-                      <a href="tel:+254701557978" className="text-gray-300 hover:text-white transition-colors">+254 701 557 978</a>
+                      <a href={TEL_URL} className="text-gray-300 hover:text-white transition-colors">{PHONE.display}</a>
                     </div>
                     <div className="flex items-center gap-3">
                       <EnvelopeIcon className="text-primary-400 flex-shrink-0" size={18} />
-                      <a href="mailto:info@naniya.co.ke" className="text-gray-300 hover:text-white transition-colors">info@naniya.co.ke</a>
+                      <a href={MAILTO_URL} className="text-gray-300 hover:text-white transition-colors">{EMAIL}</a>
                     </div>
                   </div>
                 </div>
                 <div className="bg-gray-700/50 rounded-xl p-6 border border-gray-600/50">
                   <div className="aspect-[4/3] bg-gray-600/50 rounded-lg flex items-center justify-center">
                     <a
-                      href="https://maps.google.com/?q=Neptune+Residency+Mararo+Road+Lavington+Nairobi"
+                      href={GOOGLE_MAPS_URL}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-center"
                     >
                       <MapPinIcon className="text-primary-400 mx-auto mb-3" size={32} />
                       <p className="text-white font-semibold text-sm">View on Google Maps</p>
-                      <p className="text-gray-400 text-xs mt-1">Lavington, Nairobi</p>
+                      <p className="text-gray-400 text-xs mt-1">{ADDRESS.neighborhood}, {ADDRESS.city}</p>
                     </a>
                   </div>
                 </div>
@@ -537,7 +548,7 @@ export default function Home() {
                 icon: <WhatsAppIcon className="text-accent-600" size={28} />,
                 title: "WhatsApp",
                 info: "Message Us",
-                href: "https://wa.me/254701557978",
+                href: WHATSAPP_URL,
                 external: true,
                 hoverBorder: "hover:border-accent-300",
                 bg: "bg-accent-50",
@@ -545,8 +556,8 @@ export default function Home() {
               {
                 icon: <EnvelopeIcon className="text-primary-600" size={28} />,
                 title: "Email Us",
-                info: "info@naniya.co.ke",
-                href: "mailto:info@naniya.co.ke",
+                info: EMAIL,
+                href: MAILTO_URL,
                 external: false,
                 hoverBorder: "hover:border-primary-300",
                 bg: "bg-primary-50",
@@ -554,8 +565,8 @@ export default function Home() {
               {
                 icon: <PhoneIcon className="text-primary-600" size={28} />,
                 title: "Call Us",
-                info: "+254 701 557 978",
-                href: "tel:+254701557978",
+                info: PHONE.display,
+                href: TEL_URL,
                 external: false,
                 hoverBorder: "hover:border-primary-300",
                 bg: "bg-primary-50",
@@ -601,10 +612,10 @@ export default function Home() {
               <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider text-gray-300">Products</h4>
               <ul className="space-y-3 text-sm text-gray-400">
                 <li>
-                  <a href="https://chama.naniya.co.ke" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Chama Platform</a>
+                  <a href={PRODUCT_URLS.chama} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Chama Platform</a>
                 </li>
                 <li>
-                  <a href="https://lipaclear.naniya.co.ke" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LipaClear</a>
+                  <a href={PRODUCT_URLS.lipaclear} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LipaClear</a>
                 </li>
               </ul>
             </div>

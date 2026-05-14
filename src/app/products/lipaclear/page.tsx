@@ -8,6 +8,7 @@ import {
   LockIcon, GridIcon, StoreIcon, UtensilsIcon, TruckIcon, HotelIcon,
   BriefcaseIcon, BuildingIcon,
 } from '@/components/Icons';
+import { PRODUCT_URLS, WHATSAPP_URL } from '@/lib/contact';
 
 export const metadata: Metadata = {
   title: "LipaClear - M-PESA Reconciliation SaaS | Naniya Technologies",
@@ -58,7 +59,7 @@ export default function LipaClearPage() {
               Home
             </Link>
             <a
-              href="https://lipaclear.naniya.co.ke"
+              href={PRODUCT_URLS.lipaclear}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary-600 text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-primary-700 transition-all hover:shadow-md inline-flex items-center gap-2"
@@ -96,7 +97,7 @@ export default function LipaClearPage() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="https://lipaclear.naniya.co.ke"
+                  href={PRODUCT_URLS.lipaclear}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-primary-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-primary-700 transition-all hover:shadow-lg hover:shadow-primary-600/20 hover:-translate-y-0.5"
@@ -105,7 +106,7 @@ export default function LipaClearPage() {
                   <ArrowRightIcon size={18} />
                 </a>
                 <a
-                  href="https://wa.me/254701557978"
+                  href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 border-2 border-gray-200 text-gray-700 px-7 py-3.5 rounded-xl font-semibold hover:border-primary-300 hover:text-primary-700 hover:bg-primary-50/50 transition-all"
@@ -301,7 +302,7 @@ export default function LipaClearPage() {
               </div>
               <div className="flex justify-center gap-4 flex-wrap">
                 <a
-                  href="https://lipaclear.naniya.co.ke"
+                  href={PRODUCT_URLS.lipaclear}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-primary-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-primary-700 transition-all hover:shadow-lg hover:shadow-primary-600/20 hover:-translate-y-0.5"
@@ -310,7 +311,7 @@ export default function LipaClearPage() {
                   <ArrowRightIcon size={18} />
                 </a>
                 <a
-                  href="https://wa.me/254701557978"
+                  href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 border-2 border-gray-200 text-gray-700 px-7 py-3.5 rounded-xl font-semibold hover:border-primary-300 hover:text-primary-700 hover:bg-primary-50/50 transition-all"
@@ -338,7 +339,7 @@ export default function LipaClearPage() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a
-              href="https://lipaclear.naniya.co.ke"
+              href={PRODUCT_URLS.lipaclear}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-primary-600 px-7 py-3.5 rounded-xl font-semibold hover:bg-gray-50 transition-all hover:shadow-lg"
@@ -347,7 +348,7 @@ export default function LipaClearPage() {
               <ArrowRightIcon size={18} />
             </a>
             <a
-              href="https://wa.me/254701557978"
+              href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 border-2 border-white text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-white/10 transition-all"
