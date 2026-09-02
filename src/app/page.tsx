@@ -472,7 +472,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Company location */}
+      {/* Company contact */}
       <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
@@ -483,10 +483,10 @@ export default function Home() {
                   <div className="w-12 h-12 bg-primary-600/20 rounded-xl flex items-center justify-center mb-4">
                     <MapPinIcon className="text-primary-400" size={24} />
                   </div>
-                  <h2 className="text-2xl md:text-3xl font-bold mb-4 tracking-tight">Based in Nairobi</h2>
+                  <h2 className="text-2xl md:text-3xl font-bold mb-4 tracking-tight">Serving organisations across Kenya</h2>
                   <p className="text-gray-300 leading-relaxed mb-6">
-                    We work with organisations across Kenya. Contact us to arrange
-                    a remote consultation or an in-person meeting by appointment.
+                    From focused digital products to custom software delivery,
+                    we help teams solve operational challenges with practical technology.
                   </p>
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">
@@ -494,7 +494,7 @@ export default function Home() {
                       <div>
                         <p className="font-semibold text-white">Naniya Technologies Limited</p>
                         <p className="text-gray-400 text-sm">{ADDRESS.city}, {ADDRESS.country}</p>
-                        <p className="text-gray-400 text-sm">Meetings by appointment</p>
+                        <p className="text-gray-400 text-sm">Working with clients nationwide</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
@@ -521,7 +521,7 @@ export default function Home() {
                       className="inline-flex w-fit items-center gap-2 bg-white text-gray-900 px-5 py-3 rounded-xl text-sm font-semibold hover:bg-gray-100 transition-colors"
                     >
                       <WhatsAppIcon size={17} />
-                      Arrange a consultation
+                      Discuss your project
                     </a>
                   </div>
                 </div>
