@@ -11,7 +11,6 @@ export default function StructuredData() {
       'Naniya Technologies builds Chama Platform and LipaClear — WhatsApp-first chama management and M-PESA reconciliation tools for Kenya.',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: `${ADDRESS.building}, ${ADDRESS.street}, ${ADDRESS.neighborhood}`,
       addressLocality: ADDRESS.city,
       addressRegion: ADDRESS.region,
       addressCountry: ADDRESS.countryCode,

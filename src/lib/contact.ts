@@ -25,17 +25,11 @@ export const PRODUCT_DOMAINS = {
 } as const;
 
 export const ADDRESS = {
-  building: 'Neptune Residency',
-  street: 'Mararo Road',
-  neighborhood: 'Lavington',
   city: 'Nairobi',
   region: 'Nairobi County',
   country: 'Kenya',
   countryCode: 'KE',
 } as const;
-
-export const GOOGLE_MAPS_URL =
-  'https://maps.google.com/?q=Neptune+Residency+Mararo+Road+Lavington+Nairobi';
 
 export function whatsAppUrlWithMessage(message: string): string {
   return `${WHATSAPP_URL}?text=${encodeURIComponent(message)}`;

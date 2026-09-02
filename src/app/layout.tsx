@@ -17,9 +17,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Naniya Technologies Limited | Chama Platform & Technology Solutions for Kenya",
+  title: "Naniya Technologies | Digital Products & Software Solutions for Kenya",
   description:
-    "Naniya Technologies builds Chama Platform — a WhatsApp-first savings group management tool for Kenya with M-PESA integration. Manage contributions, loans, and group finances through WhatsApp. No app download needed.",
+    "Naniya Technologies builds practical digital products and custom software for Kenyan organisations, including Chama Platform and LipaClear.",
   keywords: [
     "Naniya Technologies",
     "Chama Platform",
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL(SITE_URL),
   openGraph: {
-    title: "Naniya Technologies — Chama Platform & Tech Solutions for Kenya",
-    description: "Chama Platform: manage your savings group through WhatsApp with M-PESA integration. Built by Naniya Technologies in Nairobi, Kenya.",
+    title: "Naniya Technologies — Digital Products Built for Kenya",
+    description: "Practical digital products and software solutions for Kenyan organisations, built by Naniya Technologies in Nairobi.",
     url: SITE_URL,
     siteName: "Naniya Technologies",
     locale: "en_KE",
@@ -45,14 +45,14 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Naniya Technologies — Chama Platform & Tech Solutions for Kenya",
+        alt: "Naniya Technologies — Digital Products Built for Kenya",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Naniya Technologies — Chama Platform",
-    description: "Manage your chama through WhatsApp with M-PESA integration. No app download needed.",
+    title: "Naniya Technologies — Digital Products Built for Kenya",
+    description: "Practical digital products and software solutions for Kenyan organisations.",
     images: ["/og-image.png"],
   },
   icons: {

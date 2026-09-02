@@ -11,7 +11,6 @@ import {
 import {
   ADDRESS,
   EMAIL,
-  GOOGLE_MAPS_URL,
   MAILTO_URL,
   PHONE,
   PRODUCT_URLS,
@@ -76,16 +75,16 @@ export default function Home() {
             <div className="animate-fade-in-up">
               <div className="inline-flex items-center gap-2 bg-accent-50 text-accent-700 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-accent-200/60">
                 <span className="w-2 h-2 bg-accent-500 rounded-full animate-pulse" />
-                Both Products Now LIVE
+                Kenyan-built digital products
               </div>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-[1.1] mb-6 tracking-tight">
                 Technology Solutions{" "}
                 <span className="text-primary-600">Built for Kenya</span>
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-lg">
-                From WhatsApp-based chama management to automated M-PESA
-                reconciliation — we deliver powerful, accessible solutions
-                designed for the Kenyan market.
+                We build dependable software for how Kenyan organisations work —
+                from WhatsApp-based chama management to automated M-PESA
+                reconciliation.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
@@ -132,10 +131,10 @@ export default function Home() {
       <section className="py-12 bg-gray-50/80 border-y border-gray-100">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { stat: "2", label: "Products Live" },
-            { stat: "WhatsApp", label: "API Integrated" },
-            { stat: "M-PESA", label: "Payments Built-in" },
-            { stat: "Kenya-first", label: "Made for Local Needs" },
+            { stat: "2", label: "Focused Products" },
+            { stat: "WhatsApp", label: "Built Into Workflows" },
+            { stat: "M-PESA", label: "Local Payments Ready" },
+            { stat: "Kenya-first", label: "Designed Locally" },
           ].map((item) => (
             <div key={item.label} className="text-center">
               <div className="text-2xl font-extrabold text-gray-900">{item.stat}</div>
@@ -284,7 +283,7 @@ export default function Home() {
                 Built for Real Kenyan Businesses
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Our products are already live and serving customers. Here&apos;s what they look like.
+                Explore the practical workflows behind our products.
               </p>
             </div>
           </ScrollReveal>
@@ -414,14 +413,14 @@ export default function Home() {
                   About Naniya Technologies
                 </h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Naniya Technologies Limited is a registered Kenyan technology
-                  company founded in 2026. Based in Nairobi, we build digital
+                  Naniya Technologies Limited is a Kenyan technology company.
+                  Based in Nairobi, we build digital
                   products that address real challenges faced by communities and
                   businesses across Kenya.
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Our flagship product, Chama Platform, is already live and
-                  helping savings groups manage their finances through WhatsApp.
+                  Our flagship product, Chama Platform, helps savings groups
+                  manage their finances through WhatsApp.
                   We leverage WhatsApp Business API, M-PESA integration, and
                   modern web frameworks to create accessible, impactful products.
                 </p>
@@ -473,7 +472,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Location / Visit Us */}
+      {/* Company location */}
       <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
@@ -484,18 +483,18 @@ export default function Home() {
                   <div className="w-12 h-12 bg-primary-600/20 rounded-xl flex items-center justify-center mb-4">
                     <MapPinIcon className="text-primary-400" size={24} />
                   </div>
-                  <h2 className="text-2xl md:text-3xl font-bold mb-4 tracking-tight">Visit Us</h2>
+                  <h2 className="text-2xl md:text-3xl font-bold mb-4 tracking-tight">Based in Nairobi</h2>
                   <p className="text-gray-300 leading-relaxed mb-6">
-                    Our office is located in the heart of {ADDRESS.neighborhood}, {ADDRESS.city}. We&apos;d love to meet
-                    and discuss how we can help with your technology needs.
+                    We work with organisations across Kenya. Contact us to arrange
+                    a remote consultation or an in-person meeting by appointment.
                   </p>
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">
                       <BuildingIcon className="text-primary-400 mt-1 flex-shrink-0" size={18} />
                       <div>
-                        <p className="font-semibold text-white">{ADDRESS.building}</p>
-                        <p className="text-gray-400 text-sm">{ADDRESS.street}, {ADDRESS.neighborhood}</p>
+                        <p className="font-semibold text-white">Naniya Technologies Limited</p>
                         <p className="text-gray-400 text-sm">{ADDRESS.city}, {ADDRESS.country}</p>
+                        <p className="text-gray-400 text-sm">Meetings by appointment</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
@@ -508,17 +507,21 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-gray-700/50 rounded-xl p-6 border border-gray-600/50">
-                  <div className="aspect-[4/3] bg-gray-600/50 rounded-lg flex items-center justify-center">
+                <div className="bg-gray-700/50 rounded-xl p-8 border border-gray-600/50">
+                  <div className="min-h-64 rounded-lg flex flex-col justify-center">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary-400 mb-4">Start a conversation</p>
+                    <h3 className="text-2xl font-bold text-white mb-3">Tell us what you&apos;re building.</h3>
+                    <p className="text-gray-300 leading-relaxed mb-6">
+                      Share your goals and current systems. We&apos;ll help you identify a practical next step.
+                    </p>
                     <a
-                      href={GOOGLE_MAPS_URL}
+                      href={whatsAppUrlWithMessage("Hi, I'd like to discuss a technology project with Naniya.")}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-center"
+                      className="inline-flex w-fit items-center gap-2 bg-white text-gray-900 px-5 py-3 rounded-xl text-sm font-semibold hover:bg-gray-100 transition-colors"
                     >
-                      <MapPinIcon className="text-primary-400 mx-auto mb-3" size={32} />
-                      <p className="text-white font-semibold text-sm">View on Google Maps</p>
-                      <p className="text-gray-400 text-xs mt-1">{ADDRESS.neighborhood}, {ADDRESS.city}</p>
+                      <WhatsAppIcon size={17} />
+                      Arrange a consultation
                     </a>
                   </div>
                 </div>

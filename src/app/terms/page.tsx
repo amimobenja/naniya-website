@@ -34,7 +34,7 @@ export default function TermsOfService() {
 
           <h2 className="text-2xl font-semibold text-gray-900 mt-8">Contact Us</h2>
           <p>For questions about these Terms, contact us at:</p>
-          <p>Naniya Technologies Limited<br />{ADDRESS.building}, {ADDRESS.street}<br />{ADDRESS.neighborhood}, {ADDRESS.city}<br />Email: {EMAIL}<br />Phone: {PHONE.display}</p>
+          <p>Naniya Technologies Limited<br />{ADDRESS.city}, {ADDRESS.country}<br />Email: {EMAIL}<br />Phone: {PHONE.display}</p>
         </div>
       </div>
     </main>
