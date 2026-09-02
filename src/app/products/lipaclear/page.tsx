@@ -370,7 +370,7 @@ export default function LipaClearPage() {
             <span className="text-xl font-bold tracking-tight">Naniya Technologies</span>
           </Link>
           <p className="text-gray-400 text-sm max-w-md mx-auto">
-            Building technology solutions for Kenyan communities and businesses.
+            Building practical technology for Africa and the world.
           </p>
           <div className="mt-6 text-sm text-gray-500">
             © {new Date().getFullYear()} Naniya Technologies Limited. All rights reserved.

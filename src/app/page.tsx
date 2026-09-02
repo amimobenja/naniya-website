@@ -75,16 +75,15 @@ export default function Home() {
             <div className="animate-fade-in-up">
               <div className="inline-flex items-center gap-2 bg-accent-50 text-accent-700 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-accent-200/60">
                 <span className="w-2 h-2 bg-accent-500 rounded-full animate-pulse" />
-                Kenyan-built digital products
+                Nairobi roots. Global ambition.
               </div>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-[1.1] mb-6 tracking-tight">
-                Technology Solutions{" "}
-                <span className="text-primary-600">Built for Kenya</span>
+                African Insight.{" "}
+                <span className="text-primary-600">Global Standards.</span>
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-lg">
-                We build dependable software for how Kenyan organisations work —
-                from WhatsApp-based chama management to automated M-PESA
-                reconciliation.
+                We build dependable digital products and custom software for
+                organisations operating in complex, fast-moving markets.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
@@ -134,7 +133,7 @@ export default function Home() {
             { stat: "2", label: "Focused Products" },
             { stat: "WhatsApp", label: "Built Into Workflows" },
             { stat: "M-PESA", label: "Local Payments Ready" },
-            { stat: "Kenya-first", label: "Designed Locally" },
+            { stat: "Africa-rooted", label: "Global Outlook" },
           ].map((item) => (
             <div key={item.label} className="text-center">
               <div className="text-2xl font-extrabold text-gray-900">{item.stat}</div>
@@ -154,8 +153,8 @@ export default function Home() {
                 Purpose-Built Digital Solutions
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Solving real problems for Kenyan communities and businesses with tools
-                that work the way you already do.
+                Grounded in real workflows, designed for measurable impact, and
+                engineered to scale.
               </p>
             </div>
           </ScrollReveal>
@@ -413,16 +412,15 @@ export default function Home() {
                   About Naniya Technologies
                 </h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Naniya Technologies Limited is a Kenyan technology company.
-                  Based in Nairobi, we build digital
-                  products that address real challenges faced by communities and
-                  businesses across Kenya.
+                  Naniya Technologies Limited is a Nairobi-based product and
+                  software company building practical technology for Africa and
+                  the world.
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-4">
                   Our flagship product, Chama Platform, helps savings groups
                   manage their finances through WhatsApp.
-                  We leverage WhatsApp Business API, M-PESA integration, and
-                  modern web frameworks to create accessible, impactful products.
+                  We combine deep market understanding with globally relevant
+                  engineering to create accessible, scalable products.
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-6">
                   We believe technology should work for everyone — not just big
@@ -483,10 +481,10 @@ export default function Home() {
                   <div className="w-12 h-12 bg-primary-600/20 rounded-xl flex items-center justify-center mb-4">
                     <MapPinIcon className="text-primary-400" size={24} />
                   </div>
-                  <h2 className="text-2xl md:text-3xl font-bold mb-4 tracking-tight">Serving organisations across Kenya</h2>
+                  <h2 className="text-2xl md:text-3xl font-bold mb-4 tracking-tight">Nairobi roots. Global outlook.</h2>
                   <p className="text-gray-300 leading-relaxed mb-6">
-                    From focused digital products to custom software delivery,
-                    we help teams solve operational challenges with practical technology.
+                    We partner with ambitious organisations to solve operational
+                    challenges and build technology that can scale across markets.
                   </p>
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">
@@ -494,7 +492,7 @@ export default function Home() {
                       <div>
                         <p className="font-semibold text-white">Naniya Technologies Limited</p>
                         <p className="text-gray-400 text-sm">{ADDRESS.city}, {ADDRESS.country}</p>
-                        <p className="text-gray-400 text-sm">Working with clients nationwide</p>
+                        <p className="text-gray-400 text-sm">Available for projects worldwide</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">

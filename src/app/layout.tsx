@@ -17,9 +17,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Naniya Technologies | Digital Products & Software Solutions for Kenya",
+  title: "Naniya Technologies | African Insight. Global Standards.",
   description:
-    "Naniya Technologies builds practical digital products and custom software for Kenyan organisations, including Chama Platform and LipaClear.",
+    "Naniya Technologies builds practical digital products and custom software for organisations in Africa and beyond.",
   keywords: [
     "Naniya Technologies",
     "Chama Platform",
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL(SITE_URL),
   openGraph: {
-    title: "Naniya Technologies — Digital Products Built for Kenya",
-    description: "Practical digital products and software solutions for Kenyan organisations, built by Naniya Technologies in Nairobi.",
+    title: "Naniya Technologies — African Insight. Global Standards.",
+    description: "Practical digital products and custom software for organisations in Africa and beyond, built in Nairobi.",
     url: SITE_URL,
     siteName: "Naniya Technologies",
     locale: "en_KE",
@@ -45,14 +45,14 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Naniya Technologies — Digital Products Built for Kenya",
+        alt: "Naniya Technologies — African Insight. Global Standards.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Naniya Technologies — Digital Products Built for Kenya",
-    description: "Practical digital products and software solutions for Kenyan organisations.",
+    title: "Naniya Technologies — African Insight. Global Standards.",
+    description: "Practical digital products and custom software for organisations in Africa and beyond.",
     images: ["/og-image.png"],
   },
   icons: {

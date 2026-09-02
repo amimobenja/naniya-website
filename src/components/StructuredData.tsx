@@ -8,7 +8,7 @@ export default function StructuredData() {
     url: SITE_URL,
     logo: `${SITE_URL}/icon-512.png`,
     description:
-      'Naniya Technologies builds Chama Platform and LipaClear — WhatsApp-first chama management and M-PESA reconciliation tools for Kenya.',
+      'Naniya Technologies builds practical digital products and custom software for organisations in Africa and beyond.',
     address: {
       '@type': 'PostalAddress',
       addressLocality: ADDRESS.city,
@@ -33,7 +33,7 @@ export default function StructuredData() {
     name: 'Naniya Technologies',
     url: SITE_URL,
     description:
-      'Chama Platform, LipaClear, and technology solutions for Kenya',
+      'African-rooted digital products and software built to scale globally',
     publisher: {
       '@type': 'Organization',
       name: 'Naniya Technologies Limited',
